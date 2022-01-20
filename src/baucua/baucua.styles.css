@@ -1,0 +1,38 @@
+html{
+    text-align: center;
+}
+
+h1{
+    color: red;
+}
+
+button{
+    background-color: red;
+    outline: none;
+    border:none;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.flex{
+    display: flex;
+    flex-direction: center;
+    align-items: center;
+    /* height:200px; */
+}
+img{
+    width: 50%;
+    height: auto;
+}
+
+.child-flex{
+    width: 33%;
+    margin-top: 100px;
+    /* top: 100px; */
+    /* height: 100px; */
+    /* background-color: yellow; */
+    /* border: 1px solid black; */
+}
