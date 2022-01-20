@@ -1,8 +1,8 @@
 {
-  "homepage": "https://https://github.com/bh10-d/baucua",
   "name": "baucua",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://https://bh10-d.github.io/baucua",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.1",
     "@testing-library/react": "^12.1.2",
@@ -15,7 +15,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "predeploy": "yarn run build",
+    "predeploy": "yarn build",
     "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
