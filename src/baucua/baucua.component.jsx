@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Data from './directory';
 import './baucua.styles.css';
+import DragandDrop from './DraganDrop.component';
 
 
 
@@ -19,7 +20,7 @@ function Baucua(){
         return antien1;
     });
 
-    
+    const [ reset,setReset ] = useState(<DragandDrop className="custom" lox={0} loy={-390} />);
 
     const changeResult = ()=>{
         let random = randomResult(abc);
@@ -27,18 +28,25 @@ function Baucua(){
         let random2 = randomResult(abc);
         let antien2 = [abc[random],abc[random1],abc[random2]];
         setData(antien2);
+        setReset(<DragandDrop className="custom" lox={0} loy={-390} />);
     }
 
     return (
         <div>
             <h1>Bầu cua đê</h1>
-            <div className="flex">
-            {abcc.map((p,index )=> (
-                <div className="child-flex" key={index}>
-                    <img src={p.image} alt="game" />
-                    <h2>{p.name}</h2>
+            <div className="block">
+                <div className="block-1">
+                    {abcc.map((p,index )=> (
+                        <div className="child-block" key={index}>
+                            <img src={`baucua/${p.image}`} alt="game" />
+                            <h2>{p.name}</h2>
+                        </div>
+                    ))}
                 </div>
-            ))}
+                {
+                    reset
+                }
+                {/* <DragandDrop className="custom" classNamecus={"draggable drag-item"} /> */}
             </div>
             <button onClick={changeResult}>
                 Xóc phát đê

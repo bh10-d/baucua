@@ -15,24 +15,129 @@ button{
     padding: 10px;
     font-size: 25px;
     font-weight: bold;
+    transform: translate(0px, -200px);
 }
 
-.flex{
+/*ver 1*/
+/* .block{
     display: flex;
     flex-direction: center;
     align-items: center;
-    /* height:200px; */
-}
-img{
+} */
+/* img{
     width: 50%;
     height: auto;
-}
+} */
 
-.child-flex{
+/* .child-block{
     width: 33%;
     margin-top: 100px;
-    /* top: 100px; */
-    /* height: 100px; */
-    /* background-color: yellow; */
-    /* border: 1px solid black; */
+} */
+
+
+/*ver 2*/
+.block{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  
+  .block-1{
+    display: block;
+    position: relative;
+    overflow: hidden;
+    background-image: url('../../public/dia.jpg');
+    background-position: center;
+    background-position-y: -60px;
+    border-radius: 50%;
 }
+
+.block-1 div:nth-child(1){
+    position: absolute;
+    top: 100px;
+    left: -100px;
+    transform: rotate(125deg);
+    /* border: 1px solid red; */
+}
+.block-1 div:nth-child(2){
+    margin-top: 250px;/*100px*/
+    /* border: 1px solid green; */
+}
+.block-1 div:nth-child(3){
+    position: absolute;
+    top: 100px;
+    right: -100px;
+    transform: rotate(235deg);
+    /* border: 1px solid yellow; */
+}
+
+.child-block img{
+    width:17%;
+}
+
+
+
+/*keo dia*/
+  .drag-item {
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    background-color: #29e;
+    color: white;
+    -webkit-transform: translate(0px, -390px);
+    transform: translate(0px, -390px);
+  }
+
+  .drag-item p{
+    padding-top: 150px;
+  }
+  
+  #outer-dropzone {
+    height: 140px;
+  }
+  
+  #inner-dropzone {
+    height: 80px;
+  }
+  
+  .dropzone {
+    background-color: #ccc;
+    border: dashed 4px transparent;
+    border-radius: 4px;
+    margin: 10px auto 30px;
+    padding: 10px;
+    width: 80%;
+    transition: background-color 0.3s;
+  }
+  
+  .drop-active {
+    border-color: #aaa;
+  }
+  
+  .drop-target {
+    background-color: #29e;
+    border-color: #fff;
+    border-style: solid;
+  }
+  
+  .drag-drop {
+    display: inline-block;
+    min-width: 40px;
+    padding: 2em 0.5em;
+  
+    color: #fff;
+    background-color: #29e;
+    border: solid 2px #fff;
+  
+    -webkit-transform: translate(0px, -390px);
+    transform: translate(0px, -390px);
+  
+    transition: background-color 0.3s;
+  }
+  
+  .drag-drop.can-drop {
+    color: #000;
+    background-color: #4e4;
+  }
