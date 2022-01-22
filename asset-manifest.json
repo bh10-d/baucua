@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/baucua/static/css/main.47db241f.css",
-    "main.js": "/baucua/static/js/main.b3bc5eed.js",
+    "main.js": "/baucua/static/js/main.c40ef994.js",
     "static/media/dia.jpg": "/baucua/static/media/dia.0790aad08ea46608abc1.jpg",
     "index.html": "/baucua/index.html",
     "main.47db241f.css.map": "/baucua/static/css/main.47db241f.css.map",
-    "main.b3bc5eed.js.map": "/baucua/static/js/main.b3bc5eed.js.map"
+    "main.c40ef994.js.map": "/baucua/static/js/main.c40ef994.js.map"
   },
   "entrypoints": [
     "static/css/main.47db241f.css",
-    "static/js/main.b3bc5eed.js"
+    "static/js/main.c40ef994.js"
   ]
 }
