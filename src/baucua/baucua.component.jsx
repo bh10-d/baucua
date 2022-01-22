@@ -38,7 +38,7 @@ function Baucua(){
                 <div className="block-1">
                     {abcc.map((p,index )=> (
                         <div className="child-block" key={index}>
-                            <img src={`baucua/${p.image}`} alt="game" />
+                            <img src={`/baucua/${p.image}`} alt="game" />
                             <h2>{p.name}</h2>
                         </div>
                     ))}
